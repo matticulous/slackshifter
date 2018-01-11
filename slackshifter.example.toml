@@ -1,0 +1,9 @@
+# The URL to the configured Slack incoming webhook
+webhook_url = "https://hooks.slack.com/services/[rest of path]"
+
+# This is an example of an "alias." It's a packaging of a convenient
+# name for a set of username and icon_url settings, which simplifies
+# the command line.
+[uname]
+username = "[clever username]"
+icon_url = "https://s3.amazonaws.com/[location of image]"
