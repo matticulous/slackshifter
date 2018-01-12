@@ -4,6 +4,9 @@ go:
 branches:
   only:
     - master
+script:
+  - go test -v ./...
+  - go build
 deploy:
   provider: releases
   skip_cleanup: true
