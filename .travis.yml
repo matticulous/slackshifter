@@ -1,3 +1,12 @@
 language: go
 go:
-  - 1.x
+- 1.x
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: v0UTSQbc+GYPLCWG7AVLb/kxy3p/0TL7go12u3OBdH/NGSPeov2+Is3FC/j/UxHi6epejIvCbf63QjLi09jpoSNJAAjPLTEqvtU3oRo7WDfr7BU+uT2eeFCgLCeq/HDyuLbUiRrC0rVNrs1qSrZjzsaF7uZDuTNXwIyv0YXc1iIxA/H9eMLct4Zk1VrcB0f/yYVrm9Zc0sC+LO2Rzj8CbZwd3m0HndG9285hoyHkuO8dV5DnKNsGFJKk/Ev4dlv7rr4szHisXR7y1IPBGlPtded2N/M+STrYTudYtpuWQXjH+pTwTKf0kmCOyjd8R9u/Nk0EPqH4NtCFhb1gMdRChGSA139NkAdcNfLe0Pbqz80lTt2NpRphHQdSU7WtOgjnUbQTPugtHGpVYG/mcVEd7W8bOd5mm2h78kGyaUaCKeUHPA7dlSTSlaOEe89nhn2hthfdKiIL47nz/KE09m8wHXrOOXeNOv4mGGWSrKBxiVPHoi98z0/Pkv7TWxoyXqXFusQME7OhkHlcRcaOsz82yGWa0HgcF490u7G7E96MlQjzMZuRYjrdRBoBtdvHqz/Mb6reiPmSY9S9ZSkkS6I7xqkH4ltDyh6lnJG1lXKRJLxK8FGgANLOiptSlU6d/5kWwYu6jYKoTYAJXIIr+HUWLlTQCvgU4V/BWEVVc7JyFJ8=
+  file: slackshifter
+  on:
+    repo: matticulous/slackshifter
+    tag: true
