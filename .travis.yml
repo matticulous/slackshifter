@@ -15,4 +15,4 @@ deploy:
   file: slackshifter
   on:
     repo: matticulous/slackshifter
-    tag: true
+    tags: true
