@@ -1,6 +1,9 @@
 language: go
 go:
 - 1.x
+branches:
+  only:
+    - master
 deploy:
   provider: releases
   skip_cleanup: true
